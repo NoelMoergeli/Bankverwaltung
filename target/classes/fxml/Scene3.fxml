@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="458.0" prefWidth="794.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.bbw.Bankverwaltung.controller.FXMLBalanceController">
+   <children>
+      <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Label fx:id="lbTitel" contentDisplay="CENTER" layoutX="26.0" layoutY="14.0" prefHeight="87.0" prefWidth="451.0" text="Schweizerische Nationalbank">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgBild" fitHeight="117.0" fitWidth="311.0" layoutX="469.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/800px-Logo_der_Schweizerischen_Eidgenossenschaft.svg%5B1%5D.png" />
+         </image>
+      </ImageView>
+      <Line fx:id="LTopLine" endX="650.0" layoutX="120.0" layoutY="120.0" startX="-100.0" stroke="#bcbcbc" />
+      <Label fx:id="lbIhrGuthaben" layoutX="20.0" layoutY="137.0" prefHeight="44.0" prefWidth="181.0" text="Ihr Guthaben:">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbCopyright" alignment="CENTER_RIGHT" layoutX="657.0" layoutY="427.0" prefHeight="17.0" prefWidth="123.0" text="©2019 Noel Mörgeli" />
+      <Label fx:id="lbFehler" layoutX="20.0" layoutY="411.0" prefHeight="25.0" prefWidth="520.0" />
+      <Label fx:id="lbGuthabenZahl" layoutX="20.0" layoutY="188.0" prefHeight="44.0" prefWidth="181.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbText1" layoutX="20.0" layoutY="324.0" prefHeight="25.0" prefWidth="123.0" text="Einen Betrag von">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfBetrag" layoutX="143.0" layoutY="324.0" />
+      <Label fx:id="lbText2" layoutX="303.0" layoutY="324.0" prefHeight="25.0" prefWidth="134.0" text="Schweizer Franken">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbText3" layoutX="20.0" layoutY="356.0" prefHeight="25.0" prefWidth="35.0" text="jetzt">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btEinzahlen" layoutX="60.0" layoutY="356.0" mnemonicParsing="false" onAction="#handleBtEinzahlen" prefHeight="25.0" prefWidth="123.0" text="einzahlen" />
+      <Label fx:id="lbText4" layoutX="196.0" layoutY="356.0" prefHeight="25.0" prefWidth="35.0" text="oder">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btAuszahlen" layoutX="242.0" layoutY="356.0" mnemonicParsing="false" onAction="#handleBtAuszahlen" prefHeight="25.0" prefWidth="123.0" text="auszahlen" />
+      <Label fx:id="lbText5" layoutX="379.0" layoutY="356.0" prefHeight="25.0" prefWidth="35.0" text=".">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="233.0" fitWidth="260.0" layoutX="480.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Schweizer-Franken-Geld-und-Waehrung-der-Schweiz%5B1%5D.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="lbIhrGuthaben1" layoutX="20.0" layoutY="280.0" prefHeight="44.0" prefWidth="181.0" text="Ein-/Auszahlen:">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Line fx:id="LTopLine1" endX="315.0" layoutX="120.0" layoutY="280.0" startX="-100.0" stroke="#bcbcbc" />
+      <Button fx:id="btAusloggen" layoutX="609.0" layoutY="389.0" mnemonicParsing="false" onAction="#handleBtAusloggen" prefHeight="39.0" prefWidth="110.0" text="ausloggen">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btZuruck" layoutX="479.0" layoutY="389.0" mnemonicParsing="false" onAction="#handleBtZuruck" prefHeight="39.0" prefWidth="110.0" text="zurück">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
